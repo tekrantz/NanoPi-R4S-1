@@ -77,8 +77,6 @@ jobs:
       run: |
         [ -e files ] && mv files $OPENWRTROOT/files
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE $OPENWRTROOT/.config
-        sed -i "s/CONFIG_PACKAGE_u-boot-nanopi-r4s-4gb-rk3399=y/CONFIG_PACKAGE_u-boot-nanopi-r4s-1gb-rk3399=y/" $OPENWRTROOT/.config
-        sed -i "s/CONFIG_TARGET_PROFILE=\"DEVICE_friendlyarm_nanopi-r4s-4gb\"/CONFIG_TARGET_PROFILE=\"DEVICE_friendlyarm_nanopi-r4s-1gb\"/" $OPENWRTROOT/.config
         sed -i "s/CONFIG_TARGET_rockchip_armv8_DEVICE_friendlyarm_nanopi-r4s-4gb=y/CONFIG_TARGET_rockchip_armv8_DEVICE_friendlyarm_nanopi-r4s-1gb=y/" $OPENWRTROOT/.config
         chmod +x scripts/*.sh
         cd $OPENWRTROOT
