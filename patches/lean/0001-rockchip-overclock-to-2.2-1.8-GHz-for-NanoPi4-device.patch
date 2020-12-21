@@ -1,7 +1,7 @@
-From 326ed27fb427eb5785d0277783d94cccbf52d0cb Mon Sep 17 00:00:00 2001
+From 75794a0861d5e421bfe1d84cff53eae491c1b9b8 Mon Sep 17 00:00:00 2001
 From: Tianling Shen <cnsztl@project-openwrt.eu.org>
 Date: Sat, 19 Dec 2020 21:36:28 +0800
-Subject: [PATCH 3/5] rockchip: overclock to 2.2/1.8 GHz for NanoPi4 devices
+Subject: [PATCH 1/2] rockchip: overclock to 2.2/1.8 GHz for NanoPi4 devices
 
 ---
  ...overclock-to-2.2-1.8-GHz-for-NanoPi4.patch | 180 ++++++++++++++++++
