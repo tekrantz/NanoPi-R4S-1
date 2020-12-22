@@ -10,6 +10,7 @@
 sed -i 's/192.168.1.1/192.168.2.1/g' package/base-files/files/bin/config_generate
 
 git apply $GITHUB_WORKSPACE/patches/lean/*.patch
+cat $GITHUB_WORKSPACE/patches/kernel/kernel_mods.txt >> target/linux/rockchip/armv8/config-5.4
 
 
 # Add luci-app-ssr-plus
